@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Moved</title>
+<script>
+  // Games that moved to the Second Reading Games organisation keep working at their old
+  // addresses, deeper links included: /toast-simulator/anything goes to the same place there.
+  var MOVED = ['toast-simulator', 'assault-on-precinct-6-7'];
+  var parts = location.pathname.split('/');
+  if (MOVED.indexOf(parts[1]) >= 0)
+    location.replace('https://second-reading.github.io' + location.pathname + location.search + location.hash);
+</script>
+</head>
+<body>
+<p>Page not found. Looking for a game? They're at <a href="https://second-reading.github.io/">Second Reading Games</a>.</p>
+</body>
+</html>
